@@ -11,7 +11,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: gray;
+  background-color: dimgray;
 }
 
 .menus .menus__item {
