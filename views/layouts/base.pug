@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title PRAC
+        link(rel="stylesheet", href="/assets/styles.css")
+    body
+
+        header.header 
+            ul.menus
+                li.menus__item
+                    a(href="/") HOME
+
+                li.menus__item
+                    a(href="/board/list") BOARD
+                if loggedIn
+                    li.menus__item
+                        a(href="/logout") LOGOUT
+                else
+                    li.menus__item
+                        a(href="/signup") SIGNUP
+
+                    li.menus__item
+                        a(href="/signin") SIGNIN
+
+
+        block content
+
+        footer.footer footer
+
+    
+    

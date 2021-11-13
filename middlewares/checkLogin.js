@@ -1,8 +1,12 @@
-const checkLogion = (req, res, next) => {
-  // 사용자가 로그인 했어?
-  req.session.isLoggedIn = false;
+const checkLogin = (req, res, next) => {
+  //사용자가 로그인 헀어?
 
-  next();
+  if (req.session.isLoggedIn) {
+    next();
+  } else {
+    req.session.isLoggedIn = false;
+    next();
+  }
 };
 
-module.exports = checkLogion;
+module.exports = checkLogin;

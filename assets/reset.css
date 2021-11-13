@@ -127,6 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -138,60 +139,91 @@ a {
 
 .wholeWrapper {
   width: 100%;
-
   display: flex;
   flex-direction: row;
 }
-.wholeWrapper .XX_left {
-  width: calc((100% - 1128px) / 2);
+
+.wholeWrapper .XX__left {
+  width: calc((100% - 1350px) / 2);
 }
 
 .wholeWrapper .rsWrapper {
-  width: 1128px;
-  background-color: royalblue;
+  width: 1350px;
+
+  display: flex;
+  flex-direction: column;
 }
-.rsWrapper .rsWrapper_col1 {
+
+.wholeWrapper .rsWrapper .rsWrapper__box1 {
   width: 100%;
-  height: 200px;
-  background-color: skyblue;
+  height: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
 }
-.rsWrapper .rsWrapper_col2 {
+
+.wholeWrapper .rsWrapper .rsWrapper__box2 {
   width: 100%;
-  height: 40px;
-  background-color: slateblue;
+  height: 80px;
 }
-.rsWrapper .rsWrapper_col3 {
+
+.wholeWrapper .rsWrapper .rsWrapper__box3 {
   width: 100%;
-  height: 200px;
-  background-color: skyblue;
+  height: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
 }
-.rsWrapper .rsWrapper_col4 {
+
+.wholeWrapper .rsWrapper .rsWrapper__box4 {
   width: 100%;
-  height: 40px;
-  background-color: slateblue;
+  height: 80px;
 }
-.rsWrapper .rsWrapper_col5 {
+
+.wholeWrapper .rsWrapper .rsWrapper__box5 {
   width: 100%;
-  height: 300px;
+  height: 600px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
 
   display: flex;
   flex-direction: row;
 }
-.rsWrapper_col5 .rsWrapper_col5_col1 {
-  width: 20%;
+
+.signupFromBox .signupFromBox__left {
+  width: 30%;
   height: 100%;
-  background-color: aquamarine;
+
+  background-color: rgb(87, 87, 87);
 }
-.rsWrapper_col5 .rsWrapper_col5_col2 {
-  width: 80%;
+
+.signupFromBox .signupFromBox__right {
+  width: 70%;
   height: 100%;
-  background-color: aqua;
+
+  display: flex;
+  flex-direction: column;
 }
-.rsWrapper .rsWrapper_col6 {
+
+.signupFromBox .signupFromBox__right .signupFromBox__right__input {
+  margin: 10px 0px;
+  width: 50%;
+  height: 30px;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+.wholeWrapper .rsWrapper .rsWrapper__box6 {
   width: 100%;
   height: 80px;
-  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
 }
-.wholeWrapper .XX_rigth {
-  width: calc((100% - 1128px) / 2);
+
+.wholeWrapper .XX__right {
+  width: calc((100% - 1350px) / 2);
 }
